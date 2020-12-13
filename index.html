@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+    
+</head>
+<body>
+    
+    <div id="Nav-left" class="sidenav">
+    <div id="logo">
+      <img src="./images/foodtech-logo-216x62.png" alt="">
+      <a href="#" class="closebtn" onclick="closeNav()"><i class="fa fa-remove" style="font-size:15px;"></i></a>
+    </div>
+    <div id="active">
+      <a href="#" class="side-links active"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    </div>
+    <a href="#" class="side-links"><i class='fas fa-archive' style="font-size:16px;"></i><span>Menus</span><i class='fas fa-angle-down' style="margin-left: 48%;"></i></a>
+    <a href="#" class="side-links"><i class='fas fa-clipboard-list' style="font-size:16px;" ></i><span>Orders</span></a>
+    <a href="#" class="side-links"><i class='fas fa-clipboard-list' style="font-size:16px;" ></i><span>Restaurant Lists</span></a>
+    <a href="#" class="side-links"><i class='fas fa-clipboard-list' style="font-size:16px;" ></i><span>Invoice</span></a>
+    <a href="#" class="side-links"><i class='fas fa-clipboard-list' style="font-size:16px;" ></i><span>Customers</span></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    <a href="#" class="side-links"><i class="material-icons" style="font-size:16px;">dashboard</i><span>Dashboard</span><i class='fas fa-angle-down' style="margin-left: 35% ;"></i></a>
+    </div>
+
+    <div id="Nav-right" class="sidenavright">
+      <div class="nav-right-head">
+        To-Do-List
+        <a href="#" class="closebtnright" onclick="closeNavright()"><i class="fa fa-remove" style="font-size:15px;"></i></a>
+      </div>
+      <div class="nav-right-top">
+        <input type="text" placeholder="Add Task Block">
+        <a href="#">+</a>
+        <div class="task">
+            <ul>
+              <li class="li1">
+                Task Block Title
+                <a href="#">+</a>
+              </li>
+              <li class="li2">
+                <input type="checkbox" > <span>Task to do</span> <i class="fas fa-trash-alt"> </i>
+              </li>
+              <li class="li2">
+                <input type="checkbox" > <span>Task to do</span> <i class="fas fa-trash-alt"> </i>
+              </li>
+              <li class="li3">
+                <span> <i class='fas fa-archive' ></i> Archive</span>
+                <span> <i class="fas fa-trash-alt"> </i> Delete</span>
+              </li>
+            </ul>
+        </div>
+      </div>
+      
+    </div>
+
+    
+    <div id="Nav-right2" class="sidenavright">
+      <div class="nav-right-head">
+        Reminders
+        <a href="#" class="closebtnright" onclick="closeNavright2()"><i class="fa fa-remove" style="font-size:15px;"></i></a>
+      </div>
+      <div class="reminder">
+        <h4><i class='far fa-bell' style="font-size:20px; color: #ff8306;"></i> New Reminder</h4>
+        <div class="div1">
+          <h4>Developer Meeting in Block B</h4>
+          <h4><i class='far fa-clock'></i> Today - 3:45 pm</h4>
+          <p>
+            <span> <i class='fas fa-pencil-alt' ></i> Edit </span>
+                <span> <i class="fas fa-trash-alt"> </i> Delete</span>
+          </p>
+        </div>
+        <div class="div1">
+          <h4>Developer Meeting in Block B</h4>
+          <h4><i class='far fa-clock'></i> Today - 3:45 pm</h4>
+          <p>
+            <span> <i class='fas fa-pencil-alt' ></i> Edit </span>
+                <span> <i class="fas fa-trash-alt"> </i> Delete</span>
+          </p>
+        </div>
+      </div>
+      
+    </div>
+    <div id="Nav-right3" class="sidenavright">
+      <div class="nav-right-head">
+        Notes
+        <a href="#" class="closebtnright" onclick="closeNavright3()"><i class="fa fa-remove" style="font-size:15px;"></i></a>
+      </div>
+      <div class="nav-right-top">
+        <input type="text" placeholder="Add Task Block">
+        <a href="#">+</a>
+        <div class="task">
+            <ul>
+              <li class="li1">
+                Task Block Title
+                <a href="#">+</a>
+              </li>
+              <li class="li2">
+                <input type="checkbox" > <span>Task to do</span> <i class="fas fa-trash-alt"> </i>
+              </li>
+              <li class="li2">
+                <input type="checkbox" > <span>Task to do</span> <i class="fas fa-trash-alt"> </i>
+              </li>
+              <li class="li3">
+                <span> <i class='fas fa-archive' ></i> Archive</span>
+                <span> <i class="fas fa-trash-alt"> </i> Delete</span>
+              </li>
+            </ul>
+        </div>
+      </div>
+      
+    </div>
+    <div id="Nav-right4" class="sidenavright">
+      <div class="nav-right-head">
+        Invite Members
+        <a href="#" class="closebtnright" onclick="closeNavright4()"><i class="fa fa-remove" style="font-size:15px;"></i></a>
+      </div>
+      <div class="nav-right-top">
+        <input type="text" placeholder="Add Task Block">
+        <a href="#">+</a>
+        <div class="task">
+            <ul>
+              <li class="li1">
+                Task Block Title
+                <a href="#">+</a>
+              </li>
+              <li class="li2">
+                <input type="checkbox" > <span>Task to do</span> <i class="fas fa-trash-alt"> </i>
+              </li>
+              <li class="li2">
+                <input type="checkbox" > <span>Task to do</span> <i class="fas fa-trash-alt"> </i>
+              </li>
+              <li class="li3">
+                <span> <i class='fas fa-archive' ></i> Archive</span>
+                <span> <i class="fas fa-trash-alt"> </i> Delete</span>
+              </li>
+            </ul>
+        </div>
+      </div>
+      
+    </div>
+    <div id="Nav-right5" class="sidenavright">
+      <div class="nav-right-head">
+        Settings
+        <a href="#" class="closebtnright" onclick="closeNavright5()"><i class="fa fa-remove" style="font-size:15px;"></i></a>
+      </div>
+      <div class="nav-right-top">
+        <input type="text" placeholder="Add Task Block">
+        <a href="#">+</a>
+        <div class="task">
+            <ul>
+              <li class="li1">
+                Task Block Title
+                <a href="#">+</a>
+              </li>
+              <li class="li2">
+                <input type="checkbox" > <span>Task to do</span> <i class="fas fa-trash-alt"> </i>
+              </li>
+              <li class="li2">
+                <input type="checkbox" > <span>Task to do</span> <i class="fas fa-trash-alt"> </i>
+              </li>
+              <li class="li3">
+                <span> <i class='fas fa-archive' ></i> Archive</span>
+                <span> <i class="fas fa-trash-alt"> </i> Delete</span>
+              </li>
+            </ul>
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="main">
+      <nav>
+        <span onclick="openNav()"><i class="fa fa-reorder" style="font-size:25px; color: #ff8306;"></i></span>
+        <ul id="nav-icons">
+          <li id="nav-li-1">
+            <div id="search">
+              <input type="text" placeholder="Search here.." name="search">
+              <button type="submit"><i class="fa fa-search" style="font-size:24px; color: rgb(165, 165, 165);"></i></button>
+            </div>
+          </li>
+          <li id="nav-li-2">
+            <a class="icon-a"><i id="envelop" class='far fa-envelope' style='font-size:24px; font-weight: lighter;'></i></a>
+          </li>
+          <li id="nav-li-3">
+            <a class="icon-a"><i id="envelop" class='far fa-bell' style='font-size:24px; font-weight: lighter;'></i></a>
+          </li>
+          <li id="nav-li-4">
+            <a id="img-nav"><img src="./images/avatar.jpg" alt="customer"></a>
+          </li>
+        </ul>
+      </nav>
+      <aside>
+        <ul id="right-nav">
+          <li class="right-link" id="list1" onclick="openNavright()"><a href="#"><i id="list-icon1" class='far fa-list-alt' style="font-size:20px;"></i></a></li>
+          <li class="right-link" id="list2" onclick="openNavright2()"><a href="#"><i id="list-icon2" class='far fa-bell' style="font-size:20px;"></i></a></li>
+          <li class="right-link" id="list3" onclick="openNavright3()"><a href="#"><i id="list-icon3" class='fas fa-pencil-alt' style="font-size:20px;"></i></a></li>
+          <li class="right-link" id="list4" onclick="openNavright4()"><a href="#"><i id="list-icon4" class="material-icons" style="font-size:20px; font-weight: lighter;">share</i></a></li>
+          <li class="right-link" id="list5" onclick="openNavright5()"><a href="#"><i id="list-icon5"   class="fa fa-gear" style="font-size:20px;"></i></a></li>
+        </ul>
+      </aside>
+      <div id="wrapper">
+        <h1>
+          Welcome, Anny
+        </h1>
+        <div id="four-box">
+          <div id="box1" class="box">
+            <h4>Sells Graph</h4>
+            <span class="price">$8,451</span>
+            <img src="./images/box1.png" alt="">
+            <span class="percent"><i class="fa fa-arrow-up"></i>3.2%</span>
+          </div>
+          <div id="box2" class="box">
+            <h4>Sells Graph</h4>
+            <span class="price">$8,451</span>
+            <img src="./images/box2.png" alt="">
+            <span class="percent1"><i class="fa fa-arrow-down"></i>3.2%</span>
+          </div>
+          <div id="box3" class="box">
+            <h4>Sells Graph</h4>
+            <span class="price">$8,451</span>
+            <img src="./images/box3.png" alt="">
+            <span class="percent"><i class="fa fa-arrow-up"></i>3.2%</span>
+          </div>
+          <div id="box4" class="box">
+            <h4>Sells Graph</h4>
+            <span class="price">$8,451</span>
+            <img src="./images/box4.png" alt="">
+            <span class="percent1"><i class="fa fa-arrow-down"></i>3.2%</span>
+          </div>
+        </div>
+
+        <div id="row1">
+          <div class="row1">
+            <div class="row1-top">
+                  <span>RECENT ORDERS REQUESTED</span>
+                  <button>View All</button>
+            </div>
+
+            <ul id="orders">
+              <li class="order-li order-top">
+                <span id="food">Food</span>
+                <span class="item"> Item</span>
+                <span class="price1">Price</span>
+                <span class="prod-id">Product Id</span>
+              </li>
+              <li class="order-li">
+                <img src="./images/pizza.jpg" alt="">
+                <span class="item">Pizza</span>
+                <span class="price1">$19.99</span>
+                <span class="prod-id">67384917</span>
+              </li>
+              <li class="order-li">
+                <img src="./images/cereals.jpg" alt="">
+                <span class="item">Multigrain Hot Cereal</span>
+                <span class="price1">$19.99</span>
+                <span class="prod-id">67384917</span>
+              </li>
+              <li class="order-li">
+                <img src="./images/french-fries.jpg" alt="">
+                <span class="item">French Fries</span>
+                <span class="price1">$19.99</span>
+                <span class="prod-id">67384917</span>
+              </li>
+              <li class="order-li">
+                <img src="./images/egg-sandwich.jpg" alt="">
+                <span class="item">Fried Egg Sandwich</span>
+                <span class="price1">$19.99</span>
+                <span class="prod-id">67384917</span>
+              </li>
+            </ul>
+
+            
+          </div>
+          <div class="row1">
+            <div class="row1-top" style="border-bottom: 1px solid rgb(180, 179, 179);">
+                  <span>MONTHLY REVENUE</span>
+                    <select id="Month">
+                      <option value="1">January</option>
+                      <option value="2">February</option>
+                      <option value="3">March </option>
+                      <option value="4">April</option>
+                      <option value="5">May</option>
+                      <option value="1">June</option>
+                      <option value="2">July</option>
+                      <option value="3">August</option>
+                      <option value="4">September</option>
+                      <option value="5">October</option>
+                      <option value="4">November</option>
+                      <option value="5">December</option>
+                    </select>
+            </div>
+              <ul id="revenue">
+                <li class="revenue-li">
+                  <h3>Week 1</h3>
+                  <div class="outer">
+                    <div id="per-25" class="inner">25%</div>
+                  </div>
+                </li>
+                <li class="revenue-li">
+                  <h3>Week 2</h3>
+                  <div class="outer">
+                    <div id="per-50" class="inner">50%</div>
+                  </div>
+                </li>
+                <li class="revenue-li">
+                  <h3>Week 3</h3>
+                  <div class="outer">
+                    <div id="per-70" class="inner">70%</div>
+                  </div>
+                </li>
+                <li class="revenue-li">
+                  <h3>Week 4</h3>
+                  <div class="outer">
+                    <div id="per-40" class="inner">40%</div>
+                  </div>
+                </li>
+              </ul>
+          </div>
+        </div>
+
+        <div id="row2">
+          <div id="trend">
+            TRENDING ORDERS
+          </div>
+          <div id="four-box" class="four-box2">
+            <div id="box1" class="box trend-box2">
+              <img src="./images/burger.jpg" alt="">
+              <div class="row3">
+                <span class="trend-left" style="font-weight:bolder; font-family: 'Roboto', sans-serif;">Burger</span>
+                <span class="trend-right font"><span style="color: rgb(1, 116, 16);">$45.00</span></span>
+              </div>
+              <div class="row3">
+                <span class="trend-left font">Orders <span style="color: red;">85</span></span>
+                <span class="trend-right font">Income <span style="color: red;">$575</span></span>
+              </div>
+            </div>
+            <div id="box1" class="box trend-box2">
+              <img src="./images/burger.jpg" alt="">
+              <div class="row3">
+                <span class="trend-left" style="font-weight:bolder; font-family: 'Roboto', sans-serif;">Burger</span>
+                <span class="trend-right font"><span style="color: rgb(1, 116, 16);">$45.00</span></span>
+              </div>
+              <div class="row3">
+                <span class="trend-left font">Orders <span style="color: red;">85</span></span>
+                <span class="trend-right font">Income <span style="color: red;">$575</span></span>
+              </div>
+            </div>
+            <div id="box1" class="box trend-box2">
+              <img src="./images/burger.jpg" alt="">
+              <div class="row3">
+                <span class="trend-left" style="font-weight:bolder; font-family: 'Roboto', sans-serif;">Burger</span>
+                <span class="trend-right font"><span style="color: rgb(1, 116, 16);">$45.00</span></span>
+              </div>
+              <div class="row3">
+                <span class="trend-left font">Orders <span style="color: red;">85</span></span>
+                <span class="trend-right font">Income <span style="color: red;">$575</span></span>
+              </div>
+            </div>
+            <div id="box1" class="box trend-box2">
+              <img src="./images/burger.jpg" alt="">
+              <div class="row3">
+                <span class="trend-left" style="font-weight:bolder; font-family: 'Roboto', sans-serif;">Burger</span>
+                <span class="trend-right font"><span style="color: rgb(1, 116, 16);">$45.00</span></span>
+              </div>
+              <div class="row3">
+                <span class="trend-left font">Orders <span style="color: red;">85</span></span>
+                <span class="trend-right font">Income <span style="color: red;">$575</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="grid">
+          <div id="graph">
+            <div class="grid-item">
+              TRENDING ORDERS
+            </div>
+            <table id="table">
+              <tr>
+                <td>Total Orders</td>
+                <td>Total Orders</td>
+                <td>Total Orders</td>
+                <td>Total Orders</td>
+              </tr>
+              <tr>
+                <td class="no">28,387</td>
+                <td class="no">28,387</td>
+                <td class="no">28,387</td>
+                <td class="no">28,387</td>
+              </tr>
+            </table>
+            <img src="./images/graph.png" alt="">
+          </div>
+          <div id="grid-2">
+            <div class="grid-item1">
+              TRENDING ORDERS
+            </div>
+            <div id="days">
+              <a href="#" style="background-color: #ff8306; color: white;">Mon</a>
+              <a href="#">Mon</a>
+              <a href="#">Mon</a>
+              <a href="#">Mon</a>
+              <a href="#">Mon</a>
+            </div>
+            <ul id="orders orders1">
+              <li class="order-li order-top" style="background-color: rgb(236, 236, 236);">
+                <span id="food food1" style="width: 50%;">Restaurant Names</span>
+                <span class="item item1"> Qty</span>
+                <span class="price1 price2">Orders</span>
+                <span class="prod-id id1">Profit</span>
+              </li>
+              <li class="order-li">
+                
+                <span class="food food1">Pizza</span>
+                <span class="item item1">$19.99</span>
+                <span class="price1 price2">$19.99</span>
+                <span class="prod-id id1">7.65%</span>
+              </li>
+              <li class="order-li">
+                
+                <span class="food food1">Multigrain Hot Cereal</span>
+                <span class="item item1">$19.99</span>
+                <span class="price1 price2">$19.99</span>
+                <span class="prod-id id1">7.65%</span>
+              </li>
+              <li class="order-li">
+                
+                <span class="food food1">French Fries</span>
+                <span class="item item1">$19.99</span>
+                <span class="price1 price2">$19.99</span>
+                <span class="prod-id id1">7.65%</span>
+              </li>
+              <li class="order-li">
+                
+                <span class="food food1">Fried Egg Sandwich</span>
+                <span class="item item1">$19.99</span>
+                <span class="price1 price2">$19.99</span>
+                <span class="prod-id id1">7.65%</span>
+              </li>
+              <li class="order-li">
+                
+                <span class="food food1">Fried Egg Sandwich</span>
+                <span class="item item1">$19.99</span>
+                <span class="price1 price2">$19.99</span>
+                <span class="prod-id id1">7.65%</span>
+              </li>
+
+              
+            </ul>
+          </div>
+          <div id="grid-3">
+            <div class="grid-item1">
+              TRENDING ORDERS
+            </div>
+            <table id="table2">
+              <tr>
+                <td style="border-right: 1px solid rgb(197, 197, 197);">
+                  <div><i class='fas fa-star' style='font-size:2.5rem; color: rgb(39, 39, 39);'></i></div>
+                  <div style="font-size: 1.7rem;">$8,033</div>
+                  <div>Today</div>
+                </td>
+                <td>
+                  <div><i class='fas fa-university' style='font-size:2.5rem; color: rgb(39, 39, 39);'></i></div>
+                  <div style="font-size: 1.7rem;">$8,033</div>
+                  <div>Today</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+          <div class="panel">
+            <div class="trend3">
+              <h4>RECENTLY PLACED ORDERS</h4>
+            </div>
+            <div class="panel-body">              
+                <table class="table table-hover thead-primary">
+                  <thead>
+                    <tr>
+                      <td class="col1">Order ID</td>
+                      <td class="co1l">Order Name</td>
+                      <td class="co1l">Customer Name</td>
+                      <td class="col1">Location</td>
+                      <td class="col1">Order Status</td>
+                      <td class="col1">Delivered Time</td>
+                      <td class="col1">Price</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="tr">
+                      <th scope="row" style="text-align: left;">1</th>
+                      <td>French Fries</td>
+                      <td>Jhon Leo</td>
+                      <td>New Town</td>
+                      <td><span class="badge badge-pending">Pending</span>
+                      </td>
+                      <td>10:05</td>
+                      <td>$10</td>
+                    </tr>
+                    <tr class="tr">
+                      <th scope="row"  style="text-align: left;">2</th>
+                      <td>Mango Pie</td>
+                      <td>Kristien</td>
+                      <td>Old Town</td>
+                      <td><span class="badge badge-cancelled">Cancelled</span>
+                      </td>
+                      <td>14:05</td>
+                      <td>$9</td>
+                    </tr>
+                    <tr class="tr">
+                      <th scope="row"  style="text-align: left;">3</th>
+                      <td>FrieD Egg Sandwich</td>
+                      <td>Jack Suit</td>
+                      <td>Oxford Street</td>
+                      <td><span class="badge badge-success">Delivered</span>
+                      </td>
+                      <td>12:05</td>
+                      <td>$19</td>
+                    </tr>
+                    <tr class="tr">
+                      <th scope="row"  style="text-align: left;">4</th>
+                      <td>Lemon Yogurt Parfait</td>
+                      <td>Alesdro Guitto</td>
+                      <td>Church hill</td>
+                      <td><span class="badge badge-success">Delivered</span>
+                      </td>
+                      <td>12:05</td>
+                      <td>$18</td>
+                    </tr>
+                    <tr class="tr">
+                      <th scope="row"  style="text-align: left;">5</th>
+                      <td>Spicy Grill Sandwich</td>
+                      <td>Jacob Sahwny</td>
+                      <td>palace Road</td>
+                      <td><span class="badge badge-success">Delivered</span>
+                      </td>
+                      <td>12:05</td>
+                      <td>$21</td>
+                    </tr>
+                    <tr class="tr">
+                      <th scope="row"  style="text-align: left;">6</th>
+                      <td>Chicken Sandwich</td>
+                      <td>Peter Gill</td>
+                      <td>Street 21</td>
+                      <td><span class="badge badge-pending">Pending</span>
+                      </td>
+                      <td>12:05</td>
+                      <td>$15</td>
+                    </tr>
+                  </tbody>
+                </table>
+              
+            </div>
+          </div>
+         
+        
+        
+
+        <div class="panel">
+          <div class="trend3">
+            <h4>NEW RESTAURANT LISTINGS</h4>
+          </div>
+          <div class="panel-1-body">            
+                <div class="card no-margin">
+                  <div class="card-body">
+                    <div class="media">
+                      <div class="media-img">
+                        <img src="./images/customer-1.jpg"  alt="people">
+                      </div>
+                      <div class="media-body">
+                        <h6>Hunger House </h6>
+                        <i class="material-icons">more_vert</i>
+                        <p>30 seconds ago</p>
+                      </div>
+
+                    </div>
+                    <ul class="star-rating">
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(149, 149, 149); font-size: 1.3rem;">star</i> </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                  </div>
+                  <div class="card-img">
+                    <img src="./images/food-1.jpg" alt="card_img">
+                  </div>
+                  <div class="card-footer">
+                    <div class="card-likes" >
+                      <i class='fas fa-heart'></i> 982
+                    </div>
+                    <div class="card-likes">
+                      <i class="material-icons" style="font-size: 0.6rem; vertical-align: middle;">insert_comment</i> 785
+                    </div>
+                  </div>
+                </div>
+                <div class="card no-margin">
+                  <div class="card-body">
+                    <div class="media">
+                      <div class="media-img">
+                        <img src="./images/customer-1.jpg"  alt="people">
+                      </div>
+                      <div class="media-body">
+                        <h6>Hunger House </h6>
+                        <i class="material-icons">more_vert</i>
+                        <p>30 seconds ago</p>
+                      </div>
+
+                    </div>
+                    <ul class="star-rating">
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(149, 149, 149); font-size: 1.3rem;">star</i> </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                  </div>
+                  <div class="card-img">
+                    <img src="./images/food-1.jpg" alt="card_img">
+                  </div>
+                  <div class="card-footer">
+                    <div class="card-likes" >
+                      <i class='fas fa-heart'></i> 982
+                    </div>
+                    <div class="card-likes">
+                      <i class="material-icons" style="font-size: 0.6rem; vertical-align: middle;">insert_comment</i> 785
+                    </div>
+                  </div>
+                </div>
+                <div class="card no-margin">
+                  <div class="card-body">
+                    <div class="media">
+                      <div class="media-img">
+                        <img src="./images/customer-1.jpg"  alt="people">
+                      </div>
+                      <div class="media-body">
+                        <h6>Hunger House </h6>
+                        <i class="material-icons">more_vert</i>
+                        <p>30 seconds ago</p>
+                      </div>
+
+                    </div>
+                    <ul class="star-rating">
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(244, 202, 35); font-size: 1.3rem;">star</i> </li>
+                      <li> <i class="material-icons" style="color: rgb(149, 149, 149); font-size: 1.3rem;">star</i> </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc velit, dictum eget nulla a, sollicitudin rhoncus orci. Vivamus nec commodo turpis.</p>
+                  </div>
+                  <div class="card-img">
+                    <img src="./images/food-1.jpg" alt="card_img">
+                  </div>
+                  <div class="card-footer">
+                    <div class="card-likes" >
+                      <i class='fas fa-heart'></i> 982
+                    </div>
+                    <div class="card-likes">
+                      <i class="material-icons" style="font-size: 0.6rem; vertical-align: middle;">insert_comment</i> 785
+                    </div>
+                  </div>
+                </div>
+
+                
+              
+              
+
+
+
+          </div>
+        </div>
+
+        <div id="flex-last">
+            <div class="flex-last-left">
+                <div class="last-head">
+                      <h3>RECENT SUPPORT TICKETS</h3>
+                      <a href="#"> View All</a>
+                </div>
+                
+                  <ul class="feed">
+                    <li class="feed-item">
+                      <a href="#" class="feed-a">
+                        <img src="./images/customer-1.jpg"  alt="This is another feature">
+                        <div class="feed-body">
+                          <div class="feed-name">
+                            <h4 >Lorem ipsum dolor</h4>
+                            <span > Open </span>
+                          </div> 
+                          <span class="feed-date"> <i class="material-icons" style="font-size: 0.7rem; vertical-align: middle;">date_range</i> February 24, 2020</span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus lectus a facilisis bibendum. Duis quis convallis sapien ...</p>
+                          <div class="">
+                              
+                                <i class="material-icons" style="font-size: 0.7rem; vertical-align: middle;">chat</i> 16
+                              
+                              
+                                <i class="material-icons" style="font-size: 1.2rem; vertical-align: middle; margin-left: 5%;">attachment</i> 3
+                              
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="feed-item">
+                      <a href="#" class="feed-a">
+                        <img src="./images/customer-1.jpg"  alt="This is another feature">
+                        <div class="feed-body">
+                          <div class="feed-name">
+                            <h4 >Lorem ipsum dolor</h4>
+                            <span > Open </span>
+                          </div> 
+                          <span class="feed-date"> <i class="material-icons" style="font-size: 0.7rem; vertical-align: middle;">date_range</i> February 24, 2020</span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus lectus a facilisis bibendum. Duis quis convallis sapien ...</p>
+                          <div class="">
+                              
+                                <i class="material-icons" style="font-size: 0.7rem; vertical-align: middle;">chat</i> 16
+                              
+                              
+                                <i class="material-icons" style="font-size: 1.2rem; vertical-align: middle; margin-left: 5%;">attachment</i> 3
+                              
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="feed-item" style="border-bottom: none;">
+                      <a href="#" class="feed-a">
+                        <img src="./images/customer-1.jpg"  alt="This is another feature">
+                        <div class="feed-body">
+                          <div class="feed-name">
+                            <h4 >Lorem ipsum dolor</h4>
+                            <span > Open </span>
+                          </div> 
+                          <span class="feed-date"> <i class="material-icons" style="font-size: 0.7rem; vertical-align: middle;">date_range</i> February 24, 2020</span>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus lectus a facilisis bibendum. Duis quis convallis sapien ...</p>
+                          <div class="">
+                              
+                                <i class="material-icons" style="font-size: 0.7rem; vertical-align: middle;">chat</i> 16
+                              
+                              
+                                <i class="material-icons" style="font-size: 1.2rem; vertical-align: middle; margin-left: 5%;">attachment</i> 3
+                              
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                
+            </div>
+
+
+            <div class="flex-last-right">
+            
+              <div class="last-head chat">
+                  <div id="image-name">
+                    <div class="last-head-image">
+                      <img src="./images/customer-1.jpg" alt="people" >
+                    </div>
+                    <div class="last-head-name">
+                      <h4>Heather Brown</h4>
+                      <span style="font-size: 0.7rem; color: rgb(143, 143, 143);">
+                        Active Now
+                      </span>
+                    </div>
+                  </div>
+                  <ul>
+                    <li > <i class="material-icons" style="font-size: 1.2rem; ">local_phone</i>
+                    </li>
+                    <li> <i class="material-icons"  style="font-size: 1.2rem; ">videocam</i>
+                    </li>
+                    <li > <i class="material-icons"  style="font-size: 1.2rem; ">person_add</i>
+                    </li>
+                  </ul>
+              </div>
+
+
+              <div class="chat-2">
+                <div class="msg">
+                  <div class="img-active">
+                      <img src="./images/customer-1.jpg" class="img-round" alt="people">
+                  </div>
+                  <div class="actual-msg">
+                    <div class="chat-text">
+                      <p class="corner1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <p class="chat-time time1">10:33 pm</p>
+                  </div>
+                  
+                </div>
+                <div class="msg msg2">
+                  <div class="actual-msg">
+                    <div class="chat-text chat-text2">
+                      <p class="corner2">I'm doing great, thanks for asking</p>
+                      <p class="margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                    </div>
+                    <p class="chat-time" style="margin-left: 2%;">11:01 pm</p>
+                  </div>
+                  <div class="img-active img-active2">
+                    <img src="./images/customer-2.jpg" class="img-round round-left" alt="people">
+                  </div>
+                </div>
+                <div class="msg msg3">
+                  <div class="img-active img-active3">
+                    <img src="./images/customer-1.jpg" class="img-round" alt="people">
+                  </div>
+                  <div class="actual-msg">
+                    <div class="chat-text chat-text3">
+                      <p class="corner3">It is a long established fact that a reader will be distracted by the readable content of a page</p>
+                      <p class="margin">There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+                    <p class="chat-time time3">11:03 pm</p>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="feed-footer">
+                  <ul class="list-flex">
+                    <li>
+                      <i class="material-icons" style="font-size: 1.2rem; ">mic</i>
+                    </li>
+                    <li class="chat-input">
+                      <input type="text" name="msg" placeholder="Enter Message..." value="">|
+                    </li>
+                    <li>
+                      <span> <i class="material-icons" style="font-size: 1.2rem; ">tag_faces</i> </span>
+                      <span> <i class="material-icons" style="font-size: 1.2rem; ">attach_file</i> </span>
+                      <span> <i class="material-icons" style="font-size: 1.2rem; ">camera_alt</i> </span>
+                    </li>
+                  </ul>
+              </div>
+
+
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+
+
